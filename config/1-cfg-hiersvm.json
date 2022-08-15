@@ -1,0 +1,23 @@
+{
+    "input_dir_path": "/fs/scratch/rng_cr_bcai_dl_students/r26/patent_classification/dataset/cpc_ipc_cls/uspto-50k/all-sections",
+    "dataset_filename": "all_data.csv",
+    "doc_rep_params": {
+        "embs": [
+            {
+                "type": "tf-idf",
+                "fields": [
+                    "title"
+                ],
+                "max_len": 512,
+                "label_text": false,
+                "trainable": true
+            }
+        ]
+    },
+    "model": "hierSVM",
+    "model_params": {
+        "model": "hierSVM"
+    },
+    "exp_dir_prefix": "hiersvm_t",
+    "exp_dir": "/fs/scratch/rng_cr_bcai_dl_students/r26/patent_classification/output_dir/experiments-cpc-debug/experiments-cpc-hierSVM_25"
+}

@@ -1,0 +1,42 @@
+{
+    "input_dir_path": "/fs/scratch/rng_cr_bcai_dl_students/r26/patent_classification/dataset/cpc_ipc_cls/uspto-50k/all-sections",
+    "dataset_filename": "all_data.csv",
+    "doc_rep_params": {
+        "embs": [
+            {
+                "type": "bert-precomputed",
+                "fields": [
+                    "title"
+                ],
+                "path": "/home/ujp5kor/patent_classification/embedding/experiments_cpc/uspto-10ktest/scibert/title.csv",
+                "max_len": 512,
+                "label_text": false,
+                "trainable": true
+            },
+            {
+                "type": "bert-precomputed",
+                "fields": [
+                    "abstract"
+                ],
+                "path": "/home/ujp5kor/patent_classification/embedding/experiments_cpc/uspto-10ktest/scibert/abstract.csv",
+                "max_len": 512,
+                "label_text": false,
+                "trainable": true
+            }
+        ]
+    },
+    "model": "THMM",
+    "model_params": {
+        "model": "THMM",
+        "dense_layer_size": 256,
+        "dropout_rate": 0.25,
+        "learning_rate": 0.001,
+        "epochs": 50,
+        "batch_size": 64,
+        "emb_agg": "sum",
+        "encoder_size": 768,
+        "kernel": "rbf"
+    },
+    "exp_dir_prefix": "thmm_t-a",
+    "exp_dir": "/fs/scratch/rng_cr_bcai_dl/ujp5kor/output_dir/experiments-cpc-debug-1/experiments-cpc-thmm-using-fryderyks-emb"
+}
