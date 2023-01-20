@@ -22,8 +22,6 @@ Please cite the paper when reporting, reproducing or extending the results as:
 }
 ```
 
-## Dataset
-Dataset can be found in the folder as uspto-70k-enriched.
 
 ## Purpose of the project
 This software is a research prototype, solely developed for and published as part of the publication 
@@ -58,10 +56,10 @@ provided by United States Patent and Trademark Office (USPTO) released under CC-
 We also release the dataset under the same license, CC-BY-4.0.
 
 
-The dataset is provided inside the directory `uspto-70k-enriched` containing a file for each split in CSV format.
+The dataset could be downloaded from the following link: https://zenodo.org/record/6992298
 
 ```
-uspto-70k-enriched/
+./bir_dataset_2022/
     train.csv
     dev.csv
     test.csv 
